@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBPAGE</title>
+    <style>
+        /* CSS code */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #div {
+            width: 100%;
+            min-height: 50px;
+            background-color: pink;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-left: 20% solid green;
+            border-right: 20% solid black;
+        }
+
+        #nav-div {
+            width: 100%;
+            min-height: 30px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        #header-banner-div {
+            width: 70%;
+            min-height: 30px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 70%;
+            margin-bottom: 10px;
+        }
+
+        #main-div {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #sidebar-div {
+            width: 20%;
+            min-height: 400px;
+            background-color: lightgray;
+            float: left;
+            text-align: center;
+            line-height: 400px;
+        }
+
+        #bodyarea-div {
+            width: 70%; /* Adjusted width */
+            min-height: 400px;
+            background-color: lightgray;
+            float: right;
+            text-align: center;
+            line-height: 400px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #footer-div {
+            width: 100%;
+            min-height: 50px;
+            background-color: green; /* Corrected spelling */
+            text-align: center;
+            line-height: 50px; /* Adjusted line-height */
+        }
+
+        #wrapper-div {
+            width: 100%;
+            min-height: 50px;
+            background-color: black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper-div">
+    <div id="div">LOGO</div>
+    <div id="nav-div">Navigation</div>
+    <div id="header-banner-div">Header/Banner</div>
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">Side Bar</div>
+        <div id="bodyarea-div">Body Area</div>
+    </div>
+    <div id="footer-div">Footer</div>
+</div>
+</body>
+</html>

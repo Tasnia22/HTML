@@ -1,0 +1,31 @@
+var box=document.querySelector("input");
+var btn=document.querySelector("button");
+var Mgs=document.querySelector("h1");
+var err=document.querySelector("h2");
+var list=document.querySelector("ul");
+
+btn.addEventListener("click" ,function() 
+
+{
+    console.log(box.value);
+    if(box.value>=18)
+        {
+            err.innerHTML=" "
+            list.innerHTML=" "
+Mgs.innerHTML ="You are eligible for voting"
+for(i=1;i<=10;i++)
+    {
+        list.innerHTML +=`<li> ${box.value} X ${i} =${box.value *i} </li>`;
+    }
+        }
+        else
+        {
+            Mgs.innerHTML=" "
+            list.innerHTML=" "
+            err.innerHTML = "You'r  not eligible for voting"
+            for(i=1;i<=10;i++)
+                {
+                    list.innerHTML +=`<li> ${box.value} X ${i} =${box.value *i} </li>`;
+                }
+        }
+});

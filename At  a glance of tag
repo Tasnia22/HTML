@@ -10,3 +10,6 @@ where you can link your external JavaScript code.[script tag]\
 <a>=creat hyperlink
 float=css term
 CSS Float Property: A classic way to position elements, but be aware of how it interacts with normal document flow.
+
+1FR is 1 part of the whole as long as the content inside the row or column cell is flexible 
+(i.e., the content can scale to fit the column or row).

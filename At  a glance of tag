@@ -9,3 +9,4 @@ where you can link your external JavaScript code.[script tag]\
 
 <a>=creat hyperlink
 float=css term
+CSS Float Property: A classic way to position elements, but be aware of how it interacts with normal document flow.

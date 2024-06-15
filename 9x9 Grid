@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9X9 Grid</title>
+    <style>
+
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            grid-template-rows: repeat(9,1fr);
+            gap: 2px;
+            width: 400px;
+            height: 400px;
+        }
+        .Grid 
+        {
+            background-color: coral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:black;
+            font-size: 20px;
+            border: 1px solid;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        
+<div class="Grid">1</div>
+<div class="Grid">2</div>
+<div class="Grid">3</div>
+<div class="Grid">4</div>
+<div class="Grid">5</div>
+<div class="Grid">6</div>
+<div class="Grid">7</div>
+<div class="Grid">8</div>
+<div class="Grid">9</div>
+<div class="Grid">10</div>
+<div class="Grid">11</div>
+<div class="Grid">12</div>
+<div class="Grid">13</div>
+<div class="Grid">14</div>
+<div class="Grid">15</div>
+<div class="Grid">16</div>
+<div class="Grid">17</div>
+<div class="Grid">18</div>
+<div class="Grid">19</div>
+<div class="Grid">20</div>
+<div class="Grid">21</div>
+<div class="Grid">22</div>
+<div class="Grid">23</div>
+<div class="Grid">24</div>
+<div class="Grid">25</div>
+<div class="Grid">26</div>
+<div class="Grid">27</div>
+<div class="Grid">28</div>
+<div class="Grid">29</div>
+<div class="Grid">30</div>
+<div class="Grid">31</div>
+<div class="Grid">32</div>
+<div class="Grid">33</div>
+<div class="Grid">34</div>
+<div class="Grid">35</div>
+<div class="Grid">36</div>
+<div class="Grid">37</div>
+<div class="Grid">38</div>
+<div class="Grid">39</div>
+<div class="Grid">40</div>
+<div class="Grid">41</div>
+<div class="Grid">42</div>
+<div class="Grid">43</div>
+<div class="Grid">44</div>
+<div class="Grid">45</div>
+<div class="Grid">46</div>
+<div class="Grid">47</div>
+<div class="Grid">48</div>
+<div class="Grid">49</div>
+<div class="Grid">50</div>
+<div class="Grid">51</div>
+<div class="Grid">52</div>
+<div class="Grid">53</div>
+<div class="Grid">54</div>
+<div class="Grid">55</div>
+<div class="Grid">56</div>
+<div class="Grid">57</div>
+<div class="Grid">58</div>
+<div class="Grid">59</div>
+<div class="Grid">60</div>
+<div class="Grid">61</div>
+<div class="Grid">62</div>
+<div class="Grid">63</div>
+<div class="Grid">64</div>
+<div class="Grid">65</div>
+<div class="Grid">66</div>
+<div class="Grid">67</div>
+<div class="Grid">68</div>
+<div class="Grid">69</div>
+<div class="Grid">70</div>
+<div class="Grid">71</div>
+<div class="Grid">72</div>
+<div class="Grid">73</div>
+<div class="Grid">74</div>
+<div class="Grid">75</div>
+<div class="Grid">76</div>
+<div class="Grid">77</div>
+<div class="Grid">78</div>
+<div class="Grid">79</div>
+<div class="Grid">80</div>
+<div class="Grid">81</div>
+
+    </div>
+</body>
+</html>

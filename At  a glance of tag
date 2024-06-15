@@ -1,0 +1,11 @@
+What is UTF-8 character encoding?
+
+UTF-8 is the standard character encoding you should use in your web pages. 
+This will usually be the first <meta> tag shown in the <head> element.
+
+<title>= shown in the browser's title bar name
+where you can link your external JavaScript code.[script tag]\
+
+
+<a>=creat hyperlink
+float=css term

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 columns tamplate</title>
+
+    <style>
+
+       body
+       {
+           min-width: 630px;
+           margin: 0;
+           padding: 0;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           line-height: 1.5em;
+       }
+       p
+       {
+        color: brown;
+       }
+
+
+
+       #container
+       {
+        padding-left: 200px;
+        padding-right: 190px;
+        overflow: hidden;
+       }
+
+
+
+       #container .column
+       {
+        position: relative;
+        float: left;
+        padding-bottom: 1001em;
+        margin-bottom: -1000em;
+        padding-top: 1em;
+       }
+       *html body
+       {
+        overflow: hidden;
+       }
+
+       *html #footer-wrapper
+       {
+        float: left;
+        position: relative;
+        padding-bottom:10010px ;
+        margin-bottom: 10000px;
+        background-color: aquamarine;
+        width: 100%;
+       }
+
+
+
+       #center
+       {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: rgb(188, 241, 243);
+       }
+
+
+       #left
+       {
+        width: 180px;
+        padding:0 10px ;
+        right:240px ;
+        margin-left: -100%;
+        background-color:rgb(246, 239, 169);
+       }
+
+       #right
+       {
+        width: 130px;
+        padding: 0 10px;
+        margin-right: -100%;
+        background-color: rgb(215, 174, 174);
+       }
+
+
+
+       #footer
+       {
+        clear: both;
+
+       }
+
+       #header, #footer
+       {
+        font-size: larger ;
+        padding: 0.3em ;
+        background-color: rgb(216, 207, 183);
+       }
+
+       *html #left
+       {
+        left: 150px;
+
+       }
+*html #right
+{
+    right: 150px;
+}
+
+
+    </style>
+</head>
+<body>
+    
+<header id="header"><p>Head-1</p></header>
+<div id="container">
+<main id="center" class="column">
+    <article>
+        <h1>Heading</h1>
+        <p>This is the most beautiful day</p>
+    </article>
+</main>
+<nav id="left" class="column">
+    <h3>Left Heading</h3>
+    <ul>
+        <li>
+            <a href="#">Link-1</a>
+            </li>
+            <li>
+            <a href="#">Link-2</a></li>
+            <li><a href="#">Link-3</a></li>
+        </ul>
+        <h4>Left Heading</h4>
+        <ol>
+            <li>Tasnia Rahman</li>
+            <li>Tasfia Rahman</li>
+            <li> Mihika</li>
+        </ol>
+</nav>
+<div id= "right"  class="column">
+    <h3> Right Heading </h3>
+    <p> Eid Moburak </p>
+    </div>
+</div>
+<div id="footer-wrapper"> 
+    <footer id="footer">Footer</footer> </div>
+</body>
+</html>

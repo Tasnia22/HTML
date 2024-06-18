@@ -1,0 +1,79 @@
+HTML:[How  web Browers  are able to display those web pages]
+Describe the structure of a  web page.
+
+CSS:
+Style of the web page/
+
+git:
+we can version control our program
+
+Django:
+Web programming framework [in python]
+
+SQL:
+Interaction with data bases
+
+Javascript"
+
+Testing CI/CD:
+CI:Continuous Integration
+CD:Continuous Delivery 
+
+
+<!DOCTYPE html>
+DOCTYPE Declaration/
+It's a way of telling the web Browser What version of html.
+HTML page is structured as a series of nested html elements.
+<html tag>attributes 
+
+
+<html lang="en">
+<head>
+<title>   </title>
+</head>
+<body>....visible part ,which we see in web page....</body>
+</html>
+
+
+DOM= Document Object Model;
+<h1>.......
+<h6>
+
+List:
+1.order list:
+<ol>
+<li>,,,</li>
+</ol>
+2.Unorder List:
+<ul>
+<li>....</.li>
+<li>....</li>
+</ul>
+
+Creat others elements:
+
+include: image[source= src]
+[alternative text for alt]
+<img src=" cat.jpg alt="  ">
+img is a self closing tag
+
+Link in html:
+<a href="http://google.com">Click here </a>
+
+Table creat in html :
+
+Creat form in html page:
+
+padding: inside of the border
+margin : outside border
+ id= is  just some unique name  we given to  a html element;
+
+class:
+
+
+css pseudo class;;
+button:hover;
+
+#Responsive Design
+
+

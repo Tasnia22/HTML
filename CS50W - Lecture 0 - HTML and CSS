@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-0</title>
+    <style>
+              div
+              {
+                background-color: aquamarine;
+                width: 200px;
+                height: 200px;
+                padding: 30px;
+                margin: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: larger;
+                font-weight: bold;
+                border: 3px solid green;
+
+              }
+
+              table
+              {
+                border: 1px solid black;
+                border-collapse: collapse;
+
+              }
+              td
+              {
+                border: 1px solid red;
+                padding: 2px;
+
+              }
+              th
+              {
+                border: 2px solid blue;
+              }
+              tr
+              {
+                border: 1px solid greenyellow;
+                font-style: italic;
+                font-family: 'Times New Roman', Times, serif ;
+
+              }
+              #A, #B
+              {
+                color: blueviolet;
+              }
+
+              .D
+              {
+                color: deeppink;
+              }
+
+              ul>li{
+                color: chartreuse;
+              }
+
+              a
+              {
+                color: coral;
+              }
+              a[href="http:..facebook.com"]
+              {
+                color: blanchedalmond;
+              }
+              button
+              {
+                width: 200px;
+                height: 40px;
+                font-size: x-large;
+                background-color: aqua;
+              }
+              butto:hover
+              {
+                background-color: blueviolet;
+
+              }
+              @media (min-width:600px)
+              {
+                body
+                {
+                    background-color: rgb(228, 228, 222);
+                }
+              }
+              @media (max-width:599px)
+              { body {
+                background-color: rgb(226, 205, 236);
+
+              }
+            }
+#container
+{
+    display: flex;
+    flex-wrap:wrap;
+}
+#container>div{
+    background-color: bisque;
+    font-size: 20px;
+    margin: 2px;
+    padding: 2px;
+    width: 100px;
+    height: 50px;
+
+}
+#grid
+{
+    background-color: coral;
+    display: grid;
+    padding: 50px;
+    grid-column: 20px;
+    grid-row: 10px;
+    grid-template-columns: 20px 20px auto;
+
+}
+.grid-item
+{
+    background-color: beige;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1>Leargest possible Heading</h1>
+    <h2>Smaller Heading</h2>
+    <h6>Smallest heading</h6>
+    An order list:
+    <ol>
+       <li>or</li>
+       <li>err</li> 
+    </ol>
+    An uorder list:
+    <ul>
+        <li>TAsnia</li>
+        <li>Python</li>
+    </ul>
+
+    Image:
+    <img srce="cat.jpg" alt="cat" width="300">
+
+    Link :
+
+    <a href="http://google.com">Click here</a>
+    <a href="image.html">click here</a>
+    
+    Table:
+    <table>
+        <thead>
+            <th> Heaing 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>23</td>
+                <td>15</td>
+                <td>78</td>
+            </tr>
+
+            <tr>
+                <td>name</td>
+                <td>roll</td>
+                <td>Address</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Form:</h1>
+
+    <form>
+        <input type="text" placeholder="Full Name" name="name">
+        <input type="text"  placeholder="Submit">
+
+    </form>
+
+    <h2>Form-01:</h2>
+    <form>
+
+    </form>
+
+
+    CSS :
+
+    <h2 style="color:blue; text-align: center;"> color property.welcome to my Style page </h2>
+<h3 style="color: brown; text-align: center;">Home</h3>
+
+    SIZE :</br>
+Border 
+
+    <div>Hello</div>
+    .........
+    multiple element selector
+
+    <h1 id="A">Hello</h1>
+    <h1 id="B">World</h1>
+    <h1 class="D">Welcome here</h1>
+
+
+    <p>
+        in style bar:if we style for h1 ,at the same time into the h1 id take A.And Styling for A......then,what exactly what happened??
+    And this often happens when we start to add id,class to our elements
+        </p>
+        <p1> specificity
+            <li>inline</li>
+            <li>id</li>
+            <li>class</li>
+            <li>type</li>
+            for particlar element</br>
+            css selector
+        </p1>
+
+<ol>
+    <li>School</li>
+    <li>College</li>
+    <ul>
+        <li>Univarsity</li>
+        <li>Job</li>
+    </ul>
+    <li>End</li>
+</ol>
+
+<ul>
+    <li><a href="http://google.com">Google</a></li>
+    <li><a href="http://facebook.com">Facebook</a></li>
+</ul>
+
+<button>Click me</button>
+
+<h2>Responsive Design</h2>
+<ol>
+    <li>ViewPort</li>
+    <li>Media Queries</li>
+    <li>Flexbox</li>
+    <li>Grids</li>
+</ol>
+Media:  will color change according the page
+    <h2>
+        FlexBox:
+    </h2>
+
+    <div id="container">
+        <div>1.Dhaka</div>
+        <div>2.Khulna</div>
+        <div>3.Comilla</div>
+        
+    </div>
+    <div id="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+    </div>
+
+    <h2>Bootstrap</h2>
+    <p>Alert danger</p>
+    <div class="alert alert-primary" role="alert">
+        Here is my alert
+    </div>
+    <h2>Bootstrap's column model</h2>
+    .......
+    <h2>Variables in html</h2>
+    <p>variables.scss
+    </br>All variables begin with a dollar sign
+    </p>
+    $color: red;
+    
+     
+</body>
+</html>

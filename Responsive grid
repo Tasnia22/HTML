@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Grid-layout</title>
+
+    <style>
+        .Grid-container
+        {
+            display: grid;
+            /*grid-template-columns: auto 300px auto 2fr;*/
+
+            grid-template-columns:repute(auto-fill, minmax(200px,1fr));
+        }
+
+        .Grid-container >div{
+
+            border: 2px solid greenyellow;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Grid-container">
+        <div><p>Lorem Ipsum is simply dummy
+             text of the printing and typesetting
+             industry. </p></div>
+
+             <div><p>Lorem Ipsum is simply dummy
+                text of the printing and typesetting
+                industry. </p></div>
+
+                <div><p>Lorem Ipsum is simply dummy
+                    text of the printing and typesetting
+                    industry. </p></div>
+
+                    <div><p>Lorem Ipsum is simply dummy
+                        text of the printing and typesetting
+                        industry. </p></div>
+    </div>
+</body>
+</html>

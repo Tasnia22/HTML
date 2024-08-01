@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: grid;
+            grid-template-areas:'h' 'm' 'm'  'm' 'f' ;
+            grid-template-rows: min-content auto min-content;
+
+        }
+        header
+        {
+                grid-area: h;
+               
+                background-color: chartreuse;
+                width: 100%;
+                 border: solid;
+        }
+
+        main{
+           grid-area: m;
+           width: 100%;
+           height: 100%;
+           background-color: blue;
+           border: solid;
+        }
+        section{
+                  border: solid;
+        }
+        aside{
+                  background-color: cadetblue;
+                  border: solid;
+        }
+        article
+        {
+          display: grid;
+          grid-template-areas:
+          's1 a1'
+          's2 a2'
+          's3 .' ;
+          height: 100%;
+        }
+        footer
+        {
+            grid-area: f;
+            width: 100%;
+            background-color: darkorange;
+            border: solid;
+            display: grid;
+            grid-template-areas: 'n1 n2';
+        }
+        #section-id1{grid-area: s1;}
+        #section-id2{grid-area: s2;}
+        #section-id3{grid-area: s3;}
+        #aside{grid-area: a1;}
+        #aside-2{grid-area: a2;}
+        #nav-1{grid-area: n1;}
+        #nav-2{grid-area: n2;}
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        Header nav 
+    </nav>
+</header>
+ 
+<main>
+    <article>
+        <section id="section-id1">section-1</section>
+        <section id="section-id2">section-2</section>
+        <section id="section-id3"> section-3</section>
+        <aside id="aside">Aside</aside>
+        <aside id="aside-2">Aside2</aside>
+    </article>
+</main>
+<footer>
+    <nav id="nav-1">
+        nav-1
+    </nav>
+    <nav id="nav-2">nav-2</nav>
+</footer>
+</body>
+</html>

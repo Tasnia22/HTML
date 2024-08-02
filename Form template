@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <style>
+        body{
+            background-color: rgb(200, 219, 213);
+            text-align: center;
+            margin: 10%;
+}
+form{
+    background-color: rgb(246, 218, 242);
+    box-shadow: 3px 3px 5px red;
+    padding: 30px 20px;
+    margin: 50px auto;
+    max-width: 500px;
+
+}
+.form-control
+{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.form-control label
+{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input,
+.form-control textarea,
+.form-control select{
+    border: 1px solid green;
+    border-radius: 2px;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+.form-control input[type="radio"]
+{display: inline-block;
+width: auto;}
+
+button
+{
+    background-color: aquamarine;
+    border: 1px solid;
+    border-radius: 3px;
+    display: block;
+    margin: 50px 20px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form>
+        <div class="form-control">
+            <label for="name" id="Lavel-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="Lavel-email">Email</label>
+            <input type="email" id="email" placeholder="type your mail" />
+        </div>
+
+
+        <div class="form-control">
+            <label for="password" id="Lavel-pass">password</label>
+            <input type="text" id="password" placeholder="Keep password" />
+        </div>
+
+
+        <div class="form-control">
+            <label for="age" id="Lavel-age">Age</label>
+            <input type="age" id="name" placeholder="Enter your age" />
+        </div>
+
+
+        <div class="form-control">
+            <label for="role" id="Lavel-role">Which option best describes you?</label>
+        <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+        </select>
+        </div>
+
+        <div class="form-control">
+            <label for="recommend-1" id="recommend">Would you recommend GeeksforGeeks
+                to a friend?</label>
+            <input type="radio" id="recommend-1" name="recommend">No </input>
+            <label for="recommend-2" id="recommend">
+            <input type="radio" id="recommend-2" name="recommend">Yes </input></label>
+
+      
+
+        </div>
+
+        
+        <div class="form-control">
+            <label for="comment" id="Lavel-comment"> Any Comments or Suggestions</label>
+            <textarea name="comment" id="comment" placeholder="comment here"></textarea>
+        </div>
+
+        <button type="submit" value="submit">Submit</button>
+
+      
+
+
+    </form>
+</body>
+</html>

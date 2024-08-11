@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Portfolio</title>
+    <style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    color: aliceblue;
+    background-color: rgb(17, 17, 35);
+}
+
+.head
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    font-size: 25px;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(254, 250, 250);
+    font-weight: 600;
+    font-style: italic;
+}
+.nav a{
+    font-size: 18px;
+    color: rgb(252, 248, 248);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 3s;
+
+}
+.nav a :hover
+
+{
+    color: brown;
+}
+.nav a.A{
+    color: red;
+}
+
+.home
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    background: url('c:\Users\hp\OneDrive\Pictures\Camera Roll\tasu.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+
+}
+.home-content
+{
+    
+    max-width: 600px;
+
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+}
+.home-content p::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 7, 52);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.home-content h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: skyblue;
+    position: relative;
+
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    position: relative;
+    
+}
+.home-content .btn-box
+{
+  width: 345px;
+  height: 50px;
+  padding: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-box a{
+    position: relative;
+    width: 150px;
+    height: 100%;
+    background:rgb(98, 166, 195);
+    border: 2px solid  #00abf0
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    border-radius:8px;
+    display:inline-flex;
+    transition: .5s;
+    top:5px;
+    
+
+
+}
+.btn-box a:hover
+{
+    color: #00abf0;
+}
+
+
+.btn-box a:nth-child(2)
+{
+    background: transparent;
+    color:navy;
+
+}
+.home-content .btn-box ::before{ 
+content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 7, 52);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+z-index: 2;}
+
+.btn-box a:nth-child(2):hover{
+    color: darkslateblue;
+}
+
+.btn-box a:nth-child(2)::before
+{
+    background: rgb(98, 85, 249);
+}
+.btn-box a::before
+{
+    content: '';
+    position: absolute;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover ::before{
+    width: 100%;
+
+
+}
+
+.home-sci
+{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home-sci a{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px  solid skyblue;
+    border-radius: 50%;
+font-size: 20px;
+color: #00abf0;
+text-decoration: none;
+position: relative;
+z-index: 1 ;
+overflow: hidden;
+transition: .5s;
+top: 40px;
+
+}
+.home-sci a ::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:0;
+    height: 100%;
+    background: skyblue;
+    z-index: -1;
+    transition: .5s;
+
+
+}
+
+.home-sci a:hover ::before
+{
+    width: 100%;
+}
+.home-sci a:hover
+{
+    color:navy;
+}
+
+.home-imghover
+{
+    position:0;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    
+
+
+}
+
+.home-imghover:hover
+{
+    background: rgb(8, 15, 42);
+    opacity: .8;
+}
+.logo::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 7, 52);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+@keyframes showRight
+{
+    100%
+    {
+        width: 0;
+    }
+}
+.home-content h1::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 7, 52);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-sci ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 7, 52);
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <a href="#" class="logo">Dee</a>
+        <nav class="nav">
+            <a href="#" class="A">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Hire me</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1 style="color: azure;">Hi! I am Tasnia. </h1>
+            <h2>Student</h2>
+            <p style="color: azure;">
+                I 'm Tasnia Rahman.<br>
+                 Currently pursuing my bachelor's Degree in Computer Science and Engineering  at Mymensingh Engineering College.
+            </p>
+            <div class="btn-box" style="color: skyblue">
+                <a href="#">Hire me </a>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <span class="home-imghover">
+
+        </span>
+    </section>
+</body>
+</html>
